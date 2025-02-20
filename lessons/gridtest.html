@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New calculator</title>
+</head>
+<style>
+    body {
+        display: grid;
+        place-items: center;
+    }
+    .buttons-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 5px;
+        column-gap: 5px;
+    }
+    .screen {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 10px;
+        height: 30px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        
+    }
+    .all {
+        border: 1px solid black;
+        padding: 25px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(20, 190, 11);
+    }
+    .buttons {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 5px;
+    }
+    .buttons-side {
+        display: grid;
+        grid-template-rows: 20px 1fr;
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+    button {
+        background-color: rgb(148, 123, 123);
+        border-radius: 5px;
+        width: 50px;
+        height: 30px;
+        font-size: 18px;
+    }
+    .last {
+        margin-top: 10px;
+        height: 93%;
+    }
+</style>
+<body>
+    <div class="all">
+        <div class="screen">
+            <input type="text" name="" id="">
+            
+        </div>
+        <div class="buttons">
+            <div class="buttons-main">
+                <button>/</button>
+                <button>*</button>
+                <button>-</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>0</button>
+                <button>.</button>
+                <button>C</button>
+            </div>
+            <div class="buttons-side">
+                <button>+</button>
+                <button class="last">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

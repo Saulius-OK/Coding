@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>head tails</title>
+</head>
+  <body>
+    <button onclick="
+    playGame('heads'); 
+    ">Heads</button>
+
+    <button onclick="
+    playGame('tails');
+    ">tails</button>
+    <script>
+     
+
+     function playGame(guess){
+        const randomNumber = Math.random();  
+        const result = randomNumber < 0.5 ? 'heads' : 'tails';
+        
+        console.log(guess === result ? 'You win!' : 'You lose!');
+     }
+
+    
+/*
+      
+        function playGame(playerMove) {
+            const computerMove = pickComputerMove();
+                if (playerMove === 'Scissors') {
+                if (computerMove === 'Rock') {
+                    result = 'You lose';
+                } else if (computerMove === 'Paper') {
+                    result = 'You win';
+                } else if (computerMove === 'Scissors') {
+                    result = 'Tie';
+                }
+                    */
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>08a lesson</title>
+</head>
+<body>
+    
+    <script>
+        const product = {
+            name: 'basketball',
+            price: 2095
+        };
+        console.log(product);
+        product.price += 500;
+        console.log(product);
+        
+        product['delivery-time'] = '3 days';
+
+        console.log(product);
+
+        const product1 = {
+            name: 'baske1tball',
+            price: 1111
+        };
+        const product2 = {
+            name: 'basket2ball',
+            price: 1111
+        };
+        function comparePrice (product1, product2) {
+            if (product1.price < product2.price) {
+                return product1;
+            } else {
+                return product2;
+            }
+        }
+        console.log(comparePrice(product1, product2));
+
+
+
+        function isSameProduct(product1, product2) {
+            if (product1.name === product2.name &&
+             product1.price === product2.price) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        console.log(isSameProduct(product1, product2));
+
+        const mazos = 'Good Morning';
+        console.log(mazos.repeat(2));
+        console.log(mazos.toLowerCase());
+    </script>
+</body>
+</html>
+
