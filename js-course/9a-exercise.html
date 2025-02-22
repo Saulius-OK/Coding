@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9a exercise</title>
+  </head>
+  <body>
+    <button>9a</button>
+    <button class="js-button">9b</button>
+    <p></p>
+    <button class="js-buttons" onclick="
+        document.querySelector('.js-p').innerHTML = 'You choose: heads'
+        ">Heads</button>
+    <button class="js-buttons" onclick="
+        document.querySelector('.js-p').innerHTML = 'You choose: tails'
+    ">Tails</button>
+
+    <p class="js-p"></p>
+
+    <script>
+
+        console.log(document.querySelector('button'));
+        document.querySelector('.js-button').innerHTML = '9b Done!';
+
+
+
+    </script>
+  </body>
+</html>

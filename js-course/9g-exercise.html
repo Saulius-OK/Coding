@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DOM Projects</title>
+    <title>9g exercise</title>
   </head>
   <body>
     <p>YouTube Subscribe Button</p>
@@ -21,8 +21,14 @@
     calculateTotal();
     ">Calculate</button>
     <p class="js-total-cost"></p>
-
+    <input class="js-type" placeholder="Type text" type="text"
+        onkeyup="
+        keyPress();
+        ">
+    <p class="js-typing"></p>
     <script>
+
+
         /* String(25)
         console.log('25' - 5);
         console.log('25' + 5);
@@ -36,16 +42,21 @@
             calculateTotal();
             }
         }
+        function keyPress(){
+            const inputas = document.querySelector('.js-type');
+            let tekst = inputas.value
+            document.querySelector('.js-typing').innerHTML = `${tekst}`;
+        }
 
         function calculateTotal() {
             const inputElement = document.querySelector('.js-cost-input');
-            let cost = Number(inputElement.value);
+            let cost = Number(inputElement.value) * 100;
           
-            if (cost < 40) {
-                cost = cost + 10;
+            if (cost < 4000) {
+                cost = cost + 1000;
                 
             }
-            document.querySelector('.js-total-cost').innerHTML = `$${cost}`;
+            document.querySelector('.js-total-cost').innerHTML = `$${cost / 100}`;
         }
         
 
