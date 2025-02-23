@@ -42,7 +42,7 @@
             calculateTotal();
             }
         }
-        function keyPress(){
+        function keyPress() {
             const inputas = document.querySelector('.js-type');
             let tekst = inputas.value
             document.querySelector('.js-typing').innerHTML = `${tekst}`;
@@ -58,10 +58,8 @@
             }
             document.querySelector('.js-total-cost').innerHTML = `$${cost / 100}`;
         }
-        
 
-
-       function subscribe() {
+        function subscribe() {
             const buttonElement = document.querySelector('.js-subscribe-button');
             if (buttonElement.innerText === 'Subscribe') {
                 buttonElement.innerHTML = 'Subscribed';
